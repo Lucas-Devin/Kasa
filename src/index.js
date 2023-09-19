@@ -9,6 +9,8 @@ import reportWebVitals from './reportWebVitals';
 //import Root from "./routes/root";
 import Banner from './components/Banner';
 import Header from './components/Header';
+import Footer from './components/Footer';
+import Card from './components/Card';
 
 //const router = createBrowserRouter([
 //  {
@@ -22,6 +24,9 @@ root.render(
   <React.StrictMode>
     <Header />
     <Banner />
+    <Card />
+    <Card />
+    <Footer />
   </React.StrictMode>
 );
 //<RouterProvider router={router} />
