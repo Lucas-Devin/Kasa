@@ -4,11 +4,15 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  
   width: 100%;
   height: 15%;
 }
 
+h1 {
+  z-index: index 2;
+  color: white;
+}
 
 .Header {
   display: flex;
@@ -37,7 +41,6 @@ div {
  width: 90%;
  height: 15%;
  object-fit: cover;
- z-index:2;
  border-radius: 25px; 
 }
 
@@ -56,12 +59,13 @@ footer p {
 }
 
 .cardtest {
-  width  : 200px;
+  width  : 25%;
   height : 200px;
   background : orange;
   display: flex;
   border-radius: 5px; 
   margin-right: 40px;
+  margin-bottom: 20px;
 }
 
 .cardcolumn {
@@ -71,4 +75,5 @@ footer p {
   align-items: center;
   justify-content: center;
   padding: 20px;
+  flex-wrap: wrap;
 }
