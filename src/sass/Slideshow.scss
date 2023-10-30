@@ -1,30 +1,39 @@
-
-
-.imageAccommodation {
-    width: 89%;
+.descriptionAccommodation {
+    margin: 0 auto 30px auto;
     height: 415px;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 50px;
-    object-fit: cover;
-    position: absolute;
+    width: 100%;
+    max-width: 1240px;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        border-radius: 35px;  
+        background: radial-gradient(at center top, rgba(255, 255, 255, 0) 40%, rgba(0, 0, 0, 0.4) 140%);
+        width: 100%;
+        height: 100%;
+        }
+    & .imageAccommodation {
+        width: 100%;
+        height: 415px;
+        object-fit: cover;
+        border-radius: 35px;  
+    }
+    & div {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        top: -260px;
+        z-index: 1;
+        & p {
+            color: white;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -125px;
+        }
+        & img {
+            cursor: pointer;
+        }
+    }
 }
-
-.left {
-    position: absolute;
-    top: 30%;
-    left: 10%;
-}
-
-.right {
-    position: absolute;
-    top: 30%;
-    right: 10%;
-}
-
-//.number {
-//  width: 1%;
-//   padding: 0%;
-//  margin: 0%;
-//   position: absolute;
-//}

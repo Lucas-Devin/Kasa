@@ -1,55 +1,76 @@
-.titleLocationHostStars {
-    margin-top: 30%;
-    color: #FF6060;
-    margin-left: 10%;
+.accommodationContent {
+    margin: 0 auto;
+    max-width: 1240px;
     display: flex;
-    width: 80%;
-    justify-content: space-between;
-}
-
-.host img {
-    border-radius: 50%;
-}
-
-.orange {
-    color: #FF6060;
-    font-weight: 500;
-    line-height: 51.34px;
-}
-
-.city {
-    font-weight: 500;
-    line-height: 25.67px;
-}
-
-.accommodationCollapse {
- //   display: flex;
-    width: 50%;
-    padding-left: 5%;
-    
-}
-
-
-.titleLocationHostStars ul {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    padding-left: 0%;
-}
-
-.titleLocationHostStars li {
-    list-style-type:none;
-    background-color : #FF6060;
-    color : white;
-    background-clip: padding-box;
-    display: flex;
-    margin-right: 10px;
-    padding: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 30px;
-}
-
-.host {
-    display: flex;
+    flex-direction: column;
+    width: 86%;
+    max-width: 1240px;
+    & .titleLocationHostStars {
+        display: flex;
+        justify-content: space-between;
+        color: #FF6060;
+        margin-bottom: 24px;
+        & .titleLocation {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-right: 20px;
+            row-gap: 20px;
+            & h1 {
+                font-size: 36px;
+                font-weight: 500;
+                margin-bottom: 0%;
+            }
+            & p {
+                font-size: 18px;
+                margin: 0%;
+            }
+            & ul {
+                list-style-type: none;
+                display: flex;
+                column-gap: 10px;
+                padding-left: 0%;
+                margin: 0%;
+            }
+            & li {
+                color: white;
+                background-color: #FF6060;
+                min-width: 115px;
+                text-align: center;
+                font-size: 14px;
+                border-radius: 9px;
+                line-height: 22px;
+                padding: 0 15px;
+            }
+        }
+        & .hostStars {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            & .host {
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+                max-width: 167px;
+                min-width: 180px;
+                font-size: 18px;
+                & img {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    & .accommodationCollapse {
+        display: flex;
+        column-gap: 76px;
+        margin-bottom: 50px;
+        & div {
+            width: 100%;
+        }
+        & ul {
+            list-style-type: none;
+        }
+    }
 }

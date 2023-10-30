@@ -20,3 +20,20 @@ nav {
       }
   }
 }
+@media screen and (max-width: 800px) {
+  nav {
+      padding: 20px 0 0 0;
+      & img {
+          min-width: 145px;
+          height: 47px;
+      }
+      & ul {
+          font-size: 12px;
+          gap: 0;
+          & li {
+              padding-left: 10px;
+              white-space: nowrap;
+          }
+      }
+  }
+}

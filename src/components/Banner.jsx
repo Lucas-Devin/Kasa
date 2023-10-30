@@ -1,16 +1,35 @@
 /* eslint-disable react/prop-types */
 import Source_1 from '../background1.png';
-import Source_2 from '../background2.png';
+import Source_2 from '../background3.png';
+import PropTypes from "prop-types"
 
-import '../sass/Banner.scss';
+const bannerImages = {
+    "/": {
+        image: Source_1,
+        text: "Chez vous, partout et ailleurs",
+    },
+    "/propos": {
+        image: Source_2,
+        text: "",
+    },
+}
 
-export default function Banner({ aboutPage = false}) {
-return (
-<div className="banner">
-<img src={aboutPage ? Source_2 : Source_1} alt="image du body" />
- {!aboutPage && <h1>Chez vous, partout et ailleurs</h1>}
-</div>
-    
+export default function Banner({ location }) {
+    const currentPath = location.pathname
+    const { image, text } = bannerImages[currentPath]
+
+    return (
+        <section
+            className={`banner ${currentPath === "/" ? "" : "heightAboutBanner"}`}>
+            <img src={image}
+                alt="Bannière" />
+            {currentPath === "/" && <h1>{text}</h1>}
+        </section>
     )
 }
 
+Banner.propTypes = {
+    location: PropTypes.shape({
+        pathname: PropTypes.string.isRequired,
+    }).isRequired,
+}
