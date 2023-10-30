@@ -1,0 +1,28 @@
+.collapse {
+    background-color : #FF6060;
+    color : white;
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding-top: 0%;
+}
+
+.collapsible-content {
+    color : #FF6060;
+    width: 80%;
+    margin-top: -30px;
+}
+
+.arrow {
+    position: relative;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    padding-right: 20px;
+}
+
+.collapsetitle {
+    padding-left: 20px;
+}

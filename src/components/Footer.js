@@ -1,4 +1,4 @@
-import '../App.css';
+import '../sass/Footer.scss';
 import logo from '../LOGO2.png';
 
 function Footer() {

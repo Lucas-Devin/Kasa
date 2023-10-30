@@ -1,0 +1,55 @@
+.titleLocationHostStars {
+    margin-top: 30%;
+    color: #FF6060;
+    margin-left: 10%;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.host img {
+    border-radius: 50%;
+}
+
+.orange {
+    color: #FF6060;
+    font-weight: 500;
+    line-height: 51.34px;
+}
+
+.city {
+    font-weight: 500;
+    line-height: 25.67px;
+}
+
+.accommodationCollapse {
+ //   display: flex;
+    width: 50%;
+    padding-left: 5%;
+    
+}
+
+
+.titleLocationHostStars ul {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-left: 0%;
+}
+
+.titleLocationHostStars li {
+    list-style-type:none;
+    background-color : #FF6060;
+    color : white;
+    background-clip: padding-box;
+    display: flex;
+    margin-right: 10px;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 30px;
+}
+
+.host {
+    display: flex;
+}
