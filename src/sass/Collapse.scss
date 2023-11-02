@@ -7,7 +7,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 5px 10px 5px 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 0px;
+        padding-bottom: 0px;
         border-radius: 5px;
         position: relative;
         z-index: 1;
@@ -35,8 +38,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-radius: 10px;
-        padding: 10px;
+        border-radius: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 0px;
+        padding-bottom: 0px;
         position: relative;
         z-index: 1;
         cursor: pointer;
@@ -49,7 +55,35 @@
         animation: loadContent 400ms both;
     }
     & .collapsible-content.open {
-        padding: 35px 30px 15px 15px;
+        padding: 35px 20px 15px 0px;
     }
 }
 
+@media screen and (max-width: 800px) {
+    .aboutCollapse {
+        & .collapse {
+            font-size: 13px;
+            padding: 0 10px;
+            border-radius: 7px;
+        }
+        & .collapsible-content {
+            & p {
+                font-size: 12px;
+            }
+        }
+        & .collapsible-content.open {
+            padding-top: 20px;
+        }
+    }
+    .accommodationCollapse {
+        & .collapse {
+            font-size: 13px;
+            padding: 0 10px;
+        }
+        & .collapsible-content {
+            & p {
+                font-size: 12px;
+            }
+        }
+    }
+}

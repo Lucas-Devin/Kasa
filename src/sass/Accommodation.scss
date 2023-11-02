@@ -74,3 +74,45 @@
         }
     }
 }
+
+@media screen and (max-width: 800px) {
+    .accommodationContent {
+        width: 86%;
+        max-width: 1240px;
+        margin: 27px auto 0 auto;
+        & .titleLocationHostStars {
+            flex-direction: column;
+            margin-bottom: 13px;
+            & .titleLocation {
+                & h1 {
+                font-size: 18px;
+                }
+                & p {
+                    font-size: 14px;
+                }
+                & li {
+                    font-size: 10px;
+                    min-width: 84px;
+                }
+            }
+            & .hostStars {
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+                & img {
+                    width: 18px;
+                    height: 18px;
+                }
+                & .host {
+                    font-size: 12px;
+                    min-width: 0;
+                }
+            }
+        }
+        & .accommodationCollapse {
+            flex-direction: column;
+            row-gap: 19px;
+            margin-bottom: 27px;
+        }
+    }
+}
